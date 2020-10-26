@@ -1,8 +1,8 @@
 
-Feature:login functionality
+Feature:login and logout functionalities
 
   @wip
-  Scenario Outline: verify both Students and librarians login
+  Scenario Outline: verify both Students and librarians login and logout
 
     When the user login as a "<username>" "<password>"
     Then the user on  "<title>"
