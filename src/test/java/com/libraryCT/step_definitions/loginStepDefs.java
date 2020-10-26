@@ -14,11 +14,17 @@ public class loginStepDefs {
 
     @When("the user login as a {string} {string}")
     public void the_user_login_as_a(String username, String password) {
-
+        new LoginPage().login(username , password);
     }
 
     @Then("the user on  {string}")
     public void the_user_on(String title) {
+        BrowserUtils.waitFor(2);
+        Assert.assertEquals(title , Driver.get().getTitle());
+    }
+
+    @Then("the user should logout")
+    public void the_user_should_logout() {
 
     }
 

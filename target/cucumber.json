@@ -3,67 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-10-26T22:35:38.897Z",
+        "start_timestamp": "2020-10-26T23:16:48.927Z",
         "before": [
           {
             "result": {
-              "duration": 1103000,
-              "status": "skipped"
-            },
-            "match": {
-              "location": "com.libraryCT.step_definitions.HOOKS.setUp()"
-            }
-          }
-        ],
-        "line": 11,
-        "name": "verify both Students and librarians login",
-        "description": "",
-        "id": "login-functionality;verify-both-students-and-librarians-login;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 51000,
-              "status": "skipped"
-            },
-            "match": {
-              "location": "com.libraryCT.step_definitions.HOOKS.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 7,
-            "name": "the user login as a \"student11\" \"tScBPCUr\"",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 8,
-            "name": "the user on  \"Library\"",
-            "match": {},
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@wip"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-10-26T22:35:39.332Z",
-        "before": [
-          {
-            "result": {
-              "duration": 73000,
+              "duration": 5668000,
               "status": "skipped"
             },
             "match": {
@@ -74,11 +18,11 @@
         "line": 12,
         "name": "verify both Students and librarians login",
         "description": "",
-        "id": "login-functionality;verify-both-students-and-librarians-login;;3",
+        "id": "login-functionality;verify-both-students-and-librarians-login;;2",
         "after": [
           {
             "result": {
-              "duration": 7158000,
+              "duration": 52000,
               "status": "skipped"
             },
             "match": {
@@ -91,21 +35,139 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 3730000,
+              "status": "skipped"
             },
             "line": 7,
-            "name": "the user login as a \"librarian13\" \"9rf6axdD\"",
-            "match": {},
+            "name": "the user login as a \"student11@library\" \"tScBPCUr\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"student11@library\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"tScBPCUr\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.libraryCT.step_definitions.loginStepDefs.the_user_login_as_a(java.lang.String,java.lang.String)"
+            },
             "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1200000,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "the user on  \"Library\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Library\"",
+                  "offset": 13
+                }
+              ],
+              "location": "com.libraryCT.step_definitions.loginStepDefs.the_user_on(java.lang.String)"
+            },
+            "keyword": "Then "
           },
           {
             "result": {
               "status": "undefined"
             },
+            "line": 9,
+            "name": "the user should logout",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-26T23:16:49.272Z",
+        "before": [
+          {
+            "result": {
+              "duration": 43000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.libraryCT.step_definitions.HOOKS.setUp()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "verify both Students and librarians login",
+        "description": "",
+        "id": "login-functionality;verify-both-students-and-librarians-login;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 22000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.libraryCT.step_definitions.HOOKS.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2740000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "the user login as a \"librarian13@library\" \"9rf6axdD\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"librarian13@library\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"9rf6axdD\"",
+                  "offset": 42
+                }
+              ],
+              "location": "com.libraryCT.step_definitions.loginStepDefs.the_user_login_as_a(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1010000,
+              "status": "skipped"
+            },
             "line": 8,
             "name": "the user on  \"Library\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Library\"",
+                  "offset": 13
+                }
+              ],
+              "location": "com.libraryCT.step_definitions.loginStepDefs.the_user_on(java.lang.String)"
+            },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "the user should logout",
+            "match": {},
+            "keyword": "And "
           }
         ],
         "tags": [
@@ -120,15 +182,6 @@
     "id": "login-functionality",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/login.feature",
-    "tags": [
-      {
-        "name": "@wip",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "tags": []
   }
 ]
