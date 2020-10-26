@@ -13,15 +13,13 @@ import org.openqa.selenium.By;
 public class loginStepDefs {
 
     @When("the user login as a {string} {string}")
-    public void the_user_login_as_a(String string, String string2) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    public void the_user_login_as_a(String username, String password) {
+
     }
 
     @Then("the user on  {string}")
-    public void the_user_on(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    public void the_user_on(String title) {
+
     }
 
 }
