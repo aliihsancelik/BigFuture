@@ -3,12 +3,12 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-10-26T23:16:48.927Z",
+        "start_timestamp": "2020-10-26T23:36:57.593Z",
         "before": [
           {
             "result": {
-              "duration": 5668000,
-              "status": "skipped"
+              "duration": 7517585000,
+              "status": "passed"
             },
             "match": {
               "location": "com.libraryCT.step_definitions.HOOKS.setUp()"
@@ -22,8 +22,8 @@
         "after": [
           {
             "result": {
-              "duration": 52000,
-              "status": "skipped"
+              "duration": 239315000,
+              "status": "passed"
             },
             "match": {
               "location": "com.libraryCT.step_definitions.HOOKS.tearDown(io.cucumber.java.Scenario)"
@@ -35,8 +35,8 @@
         "steps": [
           {
             "result": {
-              "duration": 3730000,
-              "status": "skipped"
+              "duration": 715111000,
+              "status": "passed"
             },
             "line": 7,
             "name": "the user login as a \"student11@library\" \"tScBPCUr\"",
@@ -57,8 +57,8 @@
           },
           {
             "result": {
-              "duration": 1200000,
-              "status": "skipped"
+              "duration": 11017195000,
+              "status": "passed"
             },
             "line": 8,
             "name": "the user on  \"Library\"",
@@ -75,11 +75,14 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 657731000,
+              "status": "passed"
             },
             "line": 9,
             "name": "the user should logout",
-            "match": {},
+            "match": {
+              "location": "com.libraryCT.step_definitions.loginStepDefs.the_user_should_logout()"
+            },
             "keyword": "And "
           }
         ],
@@ -90,12 +93,12 @@
         ]
       },
       {
-        "start_timestamp": "2020-10-26T23:16:49.272Z",
+        "start_timestamp": "2020-10-26T23:37:18.070Z",
         "before": [
           {
             "result": {
-              "duration": 43000,
-              "status": "skipped"
+              "duration": 4553977000,
+              "status": "passed"
             },
             "match": {
               "location": "com.libraryCT.step_definitions.HOOKS.setUp()"
@@ -109,8 +112,8 @@
         "after": [
           {
             "result": {
-              "duration": 22000,
-              "status": "skipped"
+              "duration": 236110000,
+              "status": "passed"
             },
             "match": {
               "location": "com.libraryCT.step_definitions.HOOKS.tearDown(io.cucumber.java.Scenario)"
@@ -122,8 +125,8 @@
         "steps": [
           {
             "result": {
-              "duration": 2740000,
-              "status": "skipped"
+              "duration": 664733000,
+              "status": "passed"
             },
             "line": 7,
             "name": "the user login as a \"librarian13@library\" \"9rf6axdD\"",
@@ -144,8 +147,8 @@
           },
           {
             "result": {
-              "duration": 1010000,
-              "status": "skipped"
+              "duration": 3743900000,
+              "status": "passed"
             },
             "line": 8,
             "name": "the user on  \"Library\"",
@@ -162,11 +165,14 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 674150000,
+              "status": "passed"
             },
             "line": 9,
             "name": "the user should logout",
-            "match": {},
+            "match": {
+              "location": "com.libraryCT.step_definitions.loginStepDefs.the_user_should_logout()"
+            },
             "keyword": "And "
           }
         ],

@@ -65,7 +65,7 @@ formatter.scenario({
   ]
 });
 formatter.before({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "the user login as a \"student11@library\" \"tScBPCUr\"",
@@ -75,7 +75,7 @@ formatter.match({
   "location": "com.libraryCT.step_definitions.loginStepDefs.the_user_login_as_a(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "the user on  \"Library\"",
@@ -85,18 +85,20 @@ formatter.match({
   "location": "com.libraryCT.step_definitions.loginStepDefs.the_user_on(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "the user should logout",
   "keyword": "And "
 });
-formatter.match({});
+formatter.match({
+  "location": "com.libraryCT.step_definitions.loginStepDefs.the_user_should_logout()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.after({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.scenario({
   "name": "verify both Students and librarians login",
@@ -109,7 +111,7 @@ formatter.scenario({
   ]
 });
 formatter.before({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "the user login as a \"librarian13@library\" \"9rf6axdD\"",
@@ -119,7 +121,7 @@ formatter.match({
   "location": "com.libraryCT.step_definitions.loginStepDefs.the_user_login_as_a(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "the user on  \"Library\"",
@@ -129,17 +131,19 @@ formatter.match({
   "location": "com.libraryCT.step_definitions.loginStepDefs.the_user_on(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "the user should logout",
   "keyword": "And "
 });
-formatter.match({});
+formatter.match({
+  "location": "com.libraryCT.step_definitions.loginStepDefs.the_user_should_logout()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.after({
-  "status": "skipped"
+  "status": "passed"
 });
 });

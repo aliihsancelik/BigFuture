@@ -25,7 +25,12 @@ public class loginStepDefs {
 
     @Then("the user should logout")
     public void the_user_should_logout() {
-
+        String currentTitle = Driver.get().getTitle();
+        Driver.get().findElement(By.cssSelector("[id='navbarDropdown']")).click();
+        Driver.get().findElement(By.xpath("//a[contains(text(),'Log Out')]")).click();
+        //BrowserUtils.waitFor(2);
+        String newTitle = Driver.get().getTitle();
+        Assert.assertTrue(!currentTitle.equals(newTitle));
     }
 
 }
