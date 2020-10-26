@@ -1,8 +1,13 @@
-@wip
-Feature:login
 
+Feature:login functionality
 
-  Scenario: login as a student
-    Given the student is on the login page
-    When the student login
-    Then the student should see Library page
+  @wip
+  Scenario Outline: verify both Students and librarians login
+
+    When the user login as a "<username>" "<password>"
+    Then the user on  "<title>"
+    Examples:
+      | username    | password | title   |
+      | student11   | tScBPCUr | Library |
+      | librarian13 | 9rf6axdD | Library |
+

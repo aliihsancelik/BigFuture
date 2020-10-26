@@ -3,27 +3,27 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-10-26T21:52:47.028Z",
+        "start_timestamp": "2020-10-26T22:35:38.897Z",
         "before": [
           {
             "result": {
-              "duration": 7355392000,
-              "status": "passed"
+              "duration": 1103000,
+              "status": "skipped"
             },
             "match": {
               "location": "com.libraryCT.step_definitions.HOOKS.setUp()"
             }
           }
         ],
-        "line": 5,
-        "name": "login as a student",
+        "line": 11,
+        "name": "verify both Students and librarians login",
         "description": "",
-        "id": "login;login-as-a-student",
+        "id": "login-functionality;verify-both-students-and-librarians-login;;2",
         "after": [
           {
             "result": {
-              "duration": 289374000,
-              "status": "passed"
+              "duration": 51000,
+              "status": "skipped"
             },
             "match": {
               "location": "com.libraryCT.step_definitions.HOOKS.tearDown(io.cucumber.java.Scenario)"
@@ -31,42 +31,80 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 1360841000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "the student is on the login page",
-            "match": {
-              "location": "com.libraryCT.step_definitions.loginStepDefs.the_student_is_on_the_login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 763527000,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 7,
-            "name": "the student login",
-            "match": {
-              "location": "com.libraryCT.step_definitions.loginStepDefs.the_student_login()"
-            },
+            "name": "the user login as a \"student11\" \"tScBPCUr\"",
+            "match": {},
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 4578510000,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 8,
-            "name": "the student should see Library page",
-            "match": {
-              "location": "com.libraryCT.step_definitions.loginStepDefs.the_student_should_see_Library_page()"
+            "name": "the user on  \"Library\"",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-26T22:35:39.332Z",
+        "before": [
+          {
+            "result": {
+              "duration": 73000,
+              "status": "skipped"
             },
+            "match": {
+              "location": "com.libraryCT.step_definitions.HOOKS.setUp()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "verify both Students and librarians login",
+        "description": "",
+        "id": "login-functionality;verify-both-students-and-librarians-login;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 7158000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.libraryCT.step_definitions.HOOKS.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "the user login as a \"librarian13\" \"9rf6axdD\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "the user on  \"Library\"",
+            "match": {},
             "keyword": "Then "
           }
         ],
@@ -77,9 +115,9 @@
         ]
       }
     ],
-    "name": "login",
+    "name": "login functionality",
     "description": "",
-    "id": "login",
+    "id": "login-functionality",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/login.feature",
     "tags": [

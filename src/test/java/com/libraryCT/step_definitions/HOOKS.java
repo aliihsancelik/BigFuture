@@ -16,7 +16,7 @@ public class HOOKS {
     @Before(order = 0) //for all scenarios executes before, order=0 means before everything for @before
     public void setUp(){
 
-       // Driver.get().get(ConfigurationReader.get("url"));
+        Driver.get().get(ConfigurationReader.get("url"));
         Driver.get().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
 

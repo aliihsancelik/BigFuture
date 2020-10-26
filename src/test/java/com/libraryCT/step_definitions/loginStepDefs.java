@@ -12,21 +12,16 @@ import org.openqa.selenium.By;
 
 public class loginStepDefs {
 
-    @Given("the student is on the login page")
-    public void the_student_is_on_the_login_page() {
-        String url = ConfigurationReader.get("url");
-        Driver.get().get(url);
+    @When("the user login as a {string} {string}")
+    public void the_user_login_as_a(String string, String string2) {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
     }
 
-    @When("the student login")
-    public void the_student_login() {
-       new LoginPage().login(ConfigurationReader.get("username"),ConfigurationReader.get("password"));
+    @Then("the user on  {string}")
+    public void the_user_on(String string) {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
     }
 
-    @Then("the student should see Library page")
-    public void the_student_should_see_Library_page() {
-        BrowserUtils.waitFor(2);
-        String actualTitle = Driver.get().getTitle();
-        Assert.assertEquals("Library", actualTitle);
-    }
 }

@@ -1,6 +1,6 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/login.feature");
 formatter.feature({
-  "name": "login",
+  "name": "login functionality",
   "description": "",
   "keyword": "Feature",
   "tags": [
@@ -9,10 +9,51 @@ formatter.feature({
     }
   ]
 });
-formatter.scenario({
-  "name": "login as a student",
+formatter.scenarioOutline({
+  "name": "verify both Students and librarians login",
   "description": "",
-  "keyword": "Scenario",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "name": "the user login as a \"\u003cusername\u003e\" \"\u003cpassword\u003e\"",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "the user on  \"\u003ctitle\u003e\"",
+  "keyword": "Then "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "username",
+        "password",
+        "title"
+      ]
+    },
+    {
+      "cells": [
+        "student11",
+        "tScBPCUr",
+        "Library"
+      ]
+    },
+    {
+      "cells": [
+        "librarian13",
+        "9rf6axdD",
+        "Library"
+      ]
+    }
+  ]
+});
+formatter.scenario({
+  "name": "verify both Students and librarians login",
+  "description": "",
+  "keyword": "Scenario Outline",
   "tags": [
     {
       "name": "@wip"
@@ -20,39 +61,57 @@ formatter.scenario({
   ]
 });
 formatter.before({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "the student is on the login page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.libraryCT.step_definitions.loginStepDefs.the_student_is_on_the_login_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the student login",
+  "name": "the user login as a \"student11\" \"tScBPCUr\"",
   "keyword": "When "
 });
-formatter.match({
-  "location": "com.libraryCT.step_definitions.loginStepDefs.the_student_login()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "the student should see Library page",
+  "name": "the user on  \"Library\"",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "com.libraryCT.step_definitions.loginStepDefs.the_student_should_see_Library_page()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.after({
-  "status": "passed"
+  "status": "skipped"
+});
+formatter.scenario({
+  "name": "verify both Students and librarians login",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@wip"
+    }
+  ]
+});
+formatter.before({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "the user login as a \"librarian13\" \"9rf6axdD\"",
+  "keyword": "When "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "the user on  \"Library\"",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.after({
+  "status": "skipped"
 });
 });
