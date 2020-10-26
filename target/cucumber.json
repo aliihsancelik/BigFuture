@@ -1,0 +1,96 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-10-26T21:52:47.028Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7355392000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.libraryCT.step_definitions.HOOKS.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "login as a student",
+        "description": "",
+        "id": "login;login-as-a-student",
+        "after": [
+          {
+            "result": {
+              "duration": 289374000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.libraryCT.step_definitions.HOOKS.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1360841000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the student is on the login page",
+            "match": {
+              "location": "com.libraryCT.step_definitions.loginStepDefs.the_student_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 763527000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the student login",
+            "match": {
+              "location": "com.libraryCT.step_definitions.loginStepDefs.the_student_login()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4578510000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the student should see Library page",
+            "match": {
+              "location": "com.libraryCT.step_definitions.loginStepDefs.the_student_should_see_Library_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/login.feature",
+    "tags": [
+      {
+        "name": "@wip",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
