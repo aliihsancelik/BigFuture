@@ -1,7 +1,11 @@
 package com.libraryCT.pages;
 
+import com.libraryCT.utilities.BrowserUtils;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
+
+import java.util.List;
 
 public class UsersPage extends BasePage{
 
@@ -20,12 +24,38 @@ public class UsersPage extends BasePage{
     @FindBy(css = "#address")
     public WebElement address;
 
-    public void sendUserInfo (String name , String passw, String mail, String adres){
+    @FindBy(css = "#user_group_id")
+    public WebElement userGroup;
 
+    @FindBy(xpath = "(//select[@name='status'])[1]")
+    public WebElement status;
+
+    @FindBy(css = "[name='start_date']")
+    public WebElement startDate;
+
+    @FindBy(css = "[name='end_date']")
+    public WebElement endDate;
+
+    @FindBy(xpath = "//button[contains(text(),'Save changes')]")
+    public WebElement saveChanges;
+
+    @FindBy(xpath = "//button[contains(text(),'Close')]")
+    public WebElement close;
+
+    @FindBy(xpath = "//tbody//a[@role='button']")
+    public List<WebElement> edits;
+
+    public void addUserWithValidInfo (String name , String passw, String mail, String adres){
+
+        addUser.click();
+        BrowserUtils.waitFor(1);
         fullName.sendKeys(name);
         password.sendKeys(passw);
         email.sendKeys(mail);
+        new Select(userGroup).selectByVisibleText("Librarian");
+        new Select(status).selectByVisibleText("ACTIVE");
         address.sendKeys(adres);
+        saveChanges.click();
 
     }
 

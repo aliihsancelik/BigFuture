@@ -30,40 +30,6 @@ public abstract class BasePage {
    @FindBy(xpath = "//span[contains(text(),'Books')]")
    public WebElement booksModule;
 
-   @FindBy(css = "#user_group_id")
-   public WebElement userGroup;
-
-   @FindBy(xpath = "(//select[@name='status'])[1]")
-   public WebElement status;
-
-   @FindBy(css = "[name='start_date']")
-   public WebElement startDate;
-
-   @FindBy(css = "[name='end_date']")
-   public WebElement endDate;
-
-   @FindBy(xpath = "//button[contains(text(),'Save changes')]")
-   public WebElement saveChanges;
-
-   @FindBy(xpath = "//button[contains(text(),'Close')]")
-   public WebElement close;
-
-   @FindBy(xpath = "//tbody//a[@role='button']")
-   public List<WebElement> edits;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
    public void logOut(){
        Driver.get().findElement(By.cssSelector("[id='navbarDropdown']")).click();

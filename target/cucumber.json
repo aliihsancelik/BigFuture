@@ -3,12 +3,12 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-10-27T21:31:27.541Z",
+        "start_timestamp": "2020-10-27T22:19:05.054Z",
         "before": [
           {
             "result": {
-              "duration": 1215000,
-              "status": "skipped"
+              "duration": 7630015000,
+              "status": "passed"
             },
             "match": {
               "location": "com.libraryCT.step_definitions.HOOKS.setUp()"
@@ -22,8 +22,8 @@
         "after": [
           {
             "result": {
-              "duration": 46000,
-              "status": "skipped"
+              "duration": 287030000,
+              "status": "passed"
             },
             "match": {
               "location": "com.libraryCT.step_definitions.HOOKS.tearDown(io.cucumber.java.Scenario)"
@@ -35,29 +35,62 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 764967000,
+              "status": "passed"
             },
             "line": 5,
+            "name": "the user login as a \"librarian\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"librarian\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.libraryCT.step_definitions.modulesStepDefs.the_user_login_as_a(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3658279000,
+              "status": "passed"
+            },
+            "line": 6,
             "name": "the user navigates \"Users\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Users\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.libraryCT.step_definitions.usersStepDefs.the_user_navigates(java.lang.String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 1536000,
+              "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "the user should add a new user successfully",
-            "match": {},
+            "match": {
+              "location": "com.libraryCT.step_definitions.usersStepDefs.the_user_should_add_a_new_user_successfully()"
+            },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 5178000,
+              "status": "passed"
             },
-            "line": 7,
+            "line": 8,
             "name": "the user should be able to edit and close",
-            "match": {},
+            "match": {
+              "location": "com.libraryCT.step_definitions.usersStepDefs.the_user_should_be_able_to_edit_and_close()"
+            },
             "keyword": "And "
           }
         ],
