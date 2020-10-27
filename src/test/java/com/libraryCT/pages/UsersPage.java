@@ -12,6 +12,9 @@ import java.util.List;
 
 public class UsersPage extends BasePage{
 
+    @FindBy(css = ".form-control.input-sm.input-xsmall.input-inline")
+    public WebElement recordDropdown;
+
     @FindBy(css = ".btn.btn-lg.btn-outline.btn-primary.btn-sm")
     public WebElement addUser;
 
