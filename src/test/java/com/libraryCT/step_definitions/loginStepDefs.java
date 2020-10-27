@@ -1,6 +1,7 @@
 package com.libraryCT.step_definitions;
 
 import com.libraryCT.pages.BasePage;
+import com.libraryCT.pages.BorrowingBooks;
 import com.libraryCT.pages.LoginPage;
 import com.libraryCT.utilities.BrowserUtils;
 import com.libraryCT.utilities.ConfigurationReader;
@@ -29,7 +30,7 @@ public class loginStepDefs {
     @Then("the user should logout")
     public void the_user_should_logout() {
         String currentTitle = Driver.get().getTitle();
-        new BasePage().logOut();
+        new BorrowingBooks().logOut();
         String newTitle = Driver.get().getTitle();
         Assert.assertTrue(!currentTitle.equals(newTitle));
     }

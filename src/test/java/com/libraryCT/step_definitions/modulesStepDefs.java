@@ -1,6 +1,7 @@
 package com.libraryCT.step_definitions;
 
 import com.libraryCT.pages.BasePage;
+import com.libraryCT.pages.BorrowingBooks;
 import com.libraryCT.pages.LoginPage;
 import com.libraryCT.utilities.BrowserUtils;
 import com.libraryCT.utilities.ConfigurationReader;
@@ -29,7 +30,7 @@ public class modulesStepDefs {
         BrowserUtils.waitFor(2);
 
         int num =0;
-        for (WebElement module : new BasePage().modules) {
+        for (WebElement module : new BorrowingBooks().modules) {
             num++;
             System.out.println(module.getText());
             Assert.assertTrue(module.isDisplayed());
