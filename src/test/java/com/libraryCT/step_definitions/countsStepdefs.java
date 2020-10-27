@@ -16,7 +16,7 @@ public class countsStepdefs {
     public void the_user_should_see_as_default_record(String defaultRecordNum) {
 
         BrowserUtils.waitFor(2);
-        Assert.assertEquals(defaultRecordNum , new Select(new UsersPage().recordDropdown).getFirstSelectedOption());
+        Assert.assertEquals(defaultRecordNum , new Select(new UsersPage().recordDropdown).getFirstSelectedOption().getText());
     }
 
     @Then("the user should see the following options")

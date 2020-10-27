@@ -3,12 +3,12 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-10-27T23:42:36.322Z",
+        "start_timestamp": "2020-10-27T23:58:12.917Z",
         "before": [
           {
             "result": {
-              "duration": 1362000,
-              "status": "skipped"
+              "duration": 7699231000,
+              "status": "passed"
             },
             "match": {
               "location": "com.libraryCT.step_definitions.HOOKS.setUp()"
@@ -22,8 +22,8 @@
         "after": [
           {
             "result": {
-              "duration": 38000,
-              "status": "skipped"
+              "duration": 284592000,
+              "status": "passed"
             },
             "match": {
               "location": "com.libraryCT.step_definitions.HOOKS.tearDown(io.cucumber.java.Scenario)"
@@ -35,8 +35,8 @@
         "steps": [
           {
             "result": {
-              "duration": 3222000,
-              "status": "skipped"
+              "duration": 710018000,
+              "status": "passed"
             },
             "line": 5,
             "name": "the user login as a \"librarian\"",
@@ -53,8 +53,8 @@
           },
           {
             "result": {
-              "duration": 1518000,
-              "status": "skipped"
+              "duration": 4394278000,
+              "status": "passed"
             },
             "line": 6,
             "name": "the user navigates \"Users\"",
@@ -71,8 +71,8 @@
           },
           {
             "result": {
-              "duration": 1380000,
-              "status": "skipped"
+              "duration": 2170679000,
+              "status": "passed"
             },
             "line": 7,
             "name": "the user should see \"10\" as default record",
@@ -89,11 +89,14 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 248213000,
+              "status": "passed"
             },
             "line": 8,
             "name": "the user should see the following options",
-            "match": {},
+            "match": {
+              "location": "com.libraryCT.step_definitions.countsStepdefs.the_user_should_see_the_following_options(java.util.List\u003cjava.lang.String\u003e)"
+            },
             "rows": [
               {
                 "cells": [
@@ -118,6 +121,16 @@
               {
                 "cells": [
                   "100"
+                ]
+              },
+              {
+                "cells": [
+                  "200"
+                ]
+              },
+              {
+                "cells": [
+                  "500"
                 ]
               }
             ],
