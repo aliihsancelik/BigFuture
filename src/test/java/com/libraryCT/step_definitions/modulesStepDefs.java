@@ -2,6 +2,7 @@ package com.libraryCT.step_definitions;
 
 import com.libraryCT.pages.BasePage;
 import com.libraryCT.pages.LoginPage;
+import com.libraryCT.utilities.BrowserUtils;
 import com.libraryCT.utilities.ConfigurationReader;
 import com.libraryCT.utilities.Driver;
 import io.cucumber.java.en.Then;
@@ -25,10 +26,15 @@ public class modulesStepDefs {
 
     @Then("the user should see modules")
     public void the_user_should_see_modules() {
+        BrowserUtils.waitFor(2);
+
+        int num =0;
         for (WebElement module : BasePage.modules) {
+            num++;
             System.out.println(module.getText());
             Assert.assertTrue(module.isDisplayed());
         }
+        System.out.println(num+"modules");
 
     }
 }

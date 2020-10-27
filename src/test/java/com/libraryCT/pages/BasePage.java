@@ -21,6 +21,7 @@ public abstract class BasePage {
    @FindBy(xpath = "//ul[@class='navbar-nav mr-auto']//li")
    public static List<WebElement> modules;
 
+
    public static void logOut(){
        Driver.get().findElement(By.cssSelector("[id='navbarDropdown']")).click();
        Driver.get().findElement(By.xpath("//a[contains(text(),'Log Out')]")).click();
