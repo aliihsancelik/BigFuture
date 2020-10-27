@@ -21,8 +21,8 @@ public class usersStepDefs {
     public void the_user_should_add_a_new_user_successfully() {
 
         BrowserUtils.waitFor(2);
-        new UsersPage().addUserWithValidInfo("ali","yb","naka@gmail.com","virginia");
-
+        new UsersPage().addUserWithValidInfo("ali","yb","nako@gmail.com","virginia");
+                                                              //mail must change every time
     }
 
     @Then("the user should be able to edit and close")

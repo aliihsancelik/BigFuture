@@ -60,7 +60,7 @@ public class UsersPage extends BasePage{
         address.sendKeys(adres);
         saveChanges.click();
         BrowserUtils.waitFor(1);
-        Assert.assertEquals(mail, Driver.get().findElement(By.xpath("//td[contains(text(),'naka@gmail.com')]")).getText());
+        Assert.assertEquals(mail, Driver.get().findElement(By.xpath("//td[contains(text(),'"+mail+"')]")).getText());
 
     }
 
