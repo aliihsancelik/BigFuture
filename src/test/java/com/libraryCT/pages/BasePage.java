@@ -12,7 +12,8 @@ import java.util.List;
 public abstract class BasePage {
 
    public BasePage(){
-       PageFactory.initElements(Driver.get(),this);
+
+      PageFactory.initElements(Driver.get(),this);//this connects our driver with the elements in this class!
    }
 
    @FindBy(css = "[id='navbarDropdown']")
