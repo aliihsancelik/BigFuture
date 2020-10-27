@@ -1,18 +1,13 @@
 package com.libraryCT.step_definitions;
 
-import com.libraryCT.pages.BasePage;
-import com.libraryCT.pages.BorrowingBooks;
+import com.libraryCT.pages.BorrowingBooksPage;
 import com.libraryCT.pages.LoginPage;
 import com.libraryCT.utilities.BrowserUtils;
 import com.libraryCT.utilities.ConfigurationReader;
-import com.libraryCT.utilities.Driver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-
-import java.util.List;
 
 public class modulesStepDefs {
 
@@ -30,7 +25,7 @@ public class modulesStepDefs {
         BrowserUtils.waitFor(2);
 
         int num =0;
-        for (WebElement module : new BorrowingBooks().modules) {
+        for (WebElement module : new BorrowingBooksPage().modules) {
             num++;
             System.out.println(module.getText());
             Assert.assertTrue(module.isDisplayed());

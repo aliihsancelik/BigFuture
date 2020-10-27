@@ -1,16 +1,11 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/Modules.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/users.feature");
 formatter.feature({
-  "name": "",
+  "name": "Add User",
   "description": "",
-  "keyword": "Feature",
-  "tags": [
-    {
-      "name": "@wip"
-    }
-  ]
+  "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "Students should have access to 2 modules",
+  "name": "Add, edit users and close",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -20,65 +15,33 @@ formatter.scenario({
   ]
 });
 formatter.before({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "the user login as a \"student\"",
+  "name": "the user navigates \"Users\"",
   "keyword": "When "
 });
-formatter.match({
-  "location": "com.libraryCT.step_definitions.modulesStepDefs.the_user_login_as_a(java.lang.String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "the user should see modules",
+  "name": "the user should add a new user successfully",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "com.libraryCT.step_definitions.modulesStepDefs.the_user_should_see_modules()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Librarian should have access to 3 modules",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@wip"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "the user login as a \"librarian\"",
-  "keyword": "When "
+  "name": "the user should be able to edit and close",
+  "keyword": "And "
 });
-formatter.match({
-  "location": "com.libraryCT.step_definitions.modulesStepDefs.the_user_login_as_a(java.lang.String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the user should see modules",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.libraryCT.step_definitions.modulesStepDefs.the_user_should_see_modules()"
-});
-formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.after({
-  "status": "passed"
+  "status": "skipped"
 });
 });

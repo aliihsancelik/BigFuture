@@ -1,4 +1,4 @@
-@wip
+
 Feature:
 
   Scenario: Students should have access to 2 modules
