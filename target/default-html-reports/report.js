@@ -40,10 +40,8 @@ formatter.match({
   "location": "com.libraryCT.step_definitions.modulesStepDefs.the_user_should_see_modules()"
 });
 formatter.result({
-  "error_message": "java.lang.NullPointerException\n\tat com.libraryCT.pages.BasePage.moduleS(BasePage.java:25)\n\tat com.libraryCT.step_definitions.modulesStepDefs.the_user_should_see_modules(modulesStepDefs.java:30)\n\tat ✽.the user should see modules(file:///Users/aliihsancelik/IdeaProjects/BigFuture/src/test/resources/features/Modules.feature:6)\n",
-  "status": "failed"
+  "status": "passed"
 });
-formatter.embedding("image/png", "embedded0.png", "screenshot");
 formatter.after({
   "status": "passed"
 });
@@ -78,10 +76,8 @@ formatter.match({
   "location": "com.libraryCT.step_definitions.modulesStepDefs.the_user_should_see_modules()"
 });
 formatter.result({
-  "error_message": "java.lang.NullPointerException\n\tat com.libraryCT.pages.BasePage.moduleS(BasePage.java:25)\n\tat com.libraryCT.step_definitions.modulesStepDefs.the_user_should_see_modules(modulesStepDefs.java:30)\n\tat ✽.the user should see modules(file:///Users/aliihsancelik/IdeaProjects/BigFuture/src/test/resources/features/Modules.feature:11)\n",
-  "status": "failed"
+  "status": "passed"
 });
-formatter.embedding("image/png", "embedded1.png", "screenshot");
 formatter.after({
   "status": "passed"
 });

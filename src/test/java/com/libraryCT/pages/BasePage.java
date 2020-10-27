@@ -9,20 +9,20 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-public abstract class BasePage {
+public class BasePage {
 
    public BasePage(){
        PageFactory.initElements(Driver.get(),this);
    }
 
    @FindBy(css = "[id='navbarDropdown']")
-   public static WebElement profileName;
+   public WebElement profileName;
 
    @FindBy(xpath = "//ul[@class='navbar-nav mr-auto']//li")
-   public static List<WebElement> modules;
+   public List<WebElement> modules;
 
 
-   public static void logOut(){
+   public void logOut(){
        Driver.get().findElement(By.cssSelector("[id='navbarDropdown']")).click();
        Driver.get().findElement(By.xpath("//a[contains(text(),'Log Out')]")).click();
    }

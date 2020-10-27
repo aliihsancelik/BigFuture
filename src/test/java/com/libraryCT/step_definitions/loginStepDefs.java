@@ -29,7 +29,7 @@ public class loginStepDefs {
     @Then("the user should logout")
     public void the_user_should_logout() {
         String currentTitle = Driver.get().getTitle();
-        BasePage.logOut();
+        new BasePage().logOut();
         String newTitle = Driver.get().getTitle();
         Assert.assertTrue(!currentTitle.equals(newTitle));
     }

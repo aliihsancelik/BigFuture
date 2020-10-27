@@ -29,12 +29,12 @@ public class modulesStepDefs {
         BrowserUtils.waitFor(2);
 
         int num =0;
-        for (WebElement module : BasePage.modules) {
+        for (WebElement module : new BasePage().modules) {
             num++;
             System.out.println(module.getText());
             Assert.assertTrue(module.isDisplayed());
         }
-        System.out.println(num+"modules");
+        System.out.println("Total= "+num+" modules");
 
     }
 }
