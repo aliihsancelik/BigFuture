@@ -1,6 +1,9 @@
 package com.libraryCT.pages;
 
 import com.libraryCT.utilities.BrowserUtils;
+import com.libraryCT.utilities.Driver;
+import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
@@ -56,13 +59,16 @@ public class UsersPage extends BasePage{
         new Select(status).selectByVisibleText("ACTIVE");
         address.sendKeys(adres);
         saveChanges.click();
+        BrowserUtils.waitFor(1);
+        Assert.assertEquals(mail, Driver.get().findElement(By.xpath("//td[contains(text(),'naka@gmail.com')]")).getText());
 
     }
 
     public void editAndClose(){
         for (WebElement edit : edits) {
-            BrowserUtils.waitFor(1);
+            BrowserUtils.waitFor(2);
             edit.click();
+            BrowserUtils.waitFor(1);
             close.click();
             BrowserUtils.waitFor(1);
         }

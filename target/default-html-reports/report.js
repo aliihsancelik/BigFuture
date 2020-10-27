@@ -47,16 +47,6 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.step({
-  "name": "the user should be able to edit and close",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.libraryCT.step_definitions.usersStepDefs.the_user_should_be_able_to_edit_and_close()"
-});
-formatter.result({
-  "status": "passed"
-});
 formatter.after({
   "status": "passed"
 });

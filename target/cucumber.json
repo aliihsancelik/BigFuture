@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-10-27T22:19:05.054Z",
+        "start_timestamp": "2020-10-27T22:37:56.853Z",
         "before": [
           {
             "result": {
-              "duration": 7630015000,
+              "duration": 6545561000,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 287030000,
+              "duration": 281860000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 764967000,
+              "duration": 672412000,
               "status": "passed"
             },
             "line": 5,
@@ -53,7 +53,7 @@
           },
           {
             "result": {
-              "duration": 3658279000,
+              "duration": 3112550000,
               "status": "passed"
             },
             "line": 6,
@@ -71,7 +71,7 @@
           },
           {
             "result": {
-              "duration": 1536000,
+              "duration": 5286954000,
               "status": "passed"
             },
             "line": 7,
@@ -80,18 +80,6 @@
               "location": "com.libraryCT.step_definitions.usersStepDefs.the_user_should_add_a_new_user_successfully()"
             },
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 5178000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "the user should be able to edit and close",
-            "match": {
-              "location": "com.libraryCT.step_definitions.usersStepDefs.the_user_should_be_able_to_edit_and_close()"
-            },
-            "keyword": "And "
           }
         ],
         "tags": [
