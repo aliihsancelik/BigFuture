@@ -59,6 +59,15 @@ public class UsersPage extends BasePage{
 
     }
 
+    public void editAndClose(){
+        for (WebElement edit : edits) {
+            BrowserUtils.waitFor(1);
+            edit.click();
+            close.click();
+            BrowserUtils.waitFor(1);
+        }
+    }
+
 
 
 

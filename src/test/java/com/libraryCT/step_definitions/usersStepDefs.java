@@ -27,5 +27,7 @@ public class usersStepDefs {
     @Then("the user should be able to edit and close")
     public void the_user_should_be_able_to_edit_and_close() {
 
+        new UsersPage().editAndClose();
+
     }
 }
