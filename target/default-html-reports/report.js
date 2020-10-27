@@ -1,63 +1,18 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/Modules.feature");
 formatter.feature({
-  "name": "login functionality",
+  "name": "",
   "description": "",
-  "keyword": "Feature"
-});
-formatter.scenarioOutline({
-  "name": "verify both Students and librarians login",
-  "description": "",
-  "keyword": "Scenario Outline",
+  "keyword": "Feature",
   "tags": [
     {
       "name": "@wip"
     }
   ]
 });
-formatter.step({
-  "name": "the user login as a \"\u003cusername\u003e\" \"\u003cpassword\u003e\"",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "the user on  \"\u003ctitle\u003e\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "name": "the user should logout",
-  "keyword": "And "
-});
-formatter.examples({
-  "name": "",
-  "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "username",
-        "password",
-        "title"
-      ]
-    },
-    {
-      "cells": [
-        "student11@library",
-        "tScBPCUr",
-        "Library"
-      ]
-    },
-    {
-      "cells": [
-        "librarian13@library",
-        "9rf6axdD",
-        "Library"
-      ]
-    }
-  ]
-});
 formatter.scenario({
-  "name": "verify both Students and librarians login",
+  "name": "Students should have access to 2 modules",
   "description": "",
-  "keyword": "Scenario Outline",
+  "keyword": "Scenario",
   "tags": [
     {
       "name": "@wip"
@@ -68,42 +23,34 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user login as a \"student11@library\" \"tScBPCUr\"",
+  "name": "the user login as a \"student\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.libraryCT.step_definitions.loginStepDefs.the_user_login_as_a(java.lang.String,java.lang.String)"
+  "location": "com.libraryCT.step_definitions.modulesStepDefs.the_user_login_as_a(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user on  \"Library\"",
+  "name": "the user should see modules",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.libraryCT.step_definitions.loginStepDefs.the_user_on(java.lang.String)"
+  "location": "com.libraryCT.step_definitions.modulesStepDefs.the_user_should_see_modules()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "java.lang.NullPointerException\n\tat com.libraryCT.step_definitions.modulesStepDefs.the_user_should_see_modules(modulesStepDefs.java:28)\n\tat ✽.the user should see modules(file:///Users/aliihsancelik/IdeaProjects/BigFuture/src/test/resources/features/Modules.feature:6)\n",
+  "status": "failed"
 });
-formatter.step({
-  "name": "the user should logout",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.libraryCT.step_definitions.loginStepDefs.the_user_should_logout()"
-});
-formatter.result({
-  "status": "passed"
-});
+formatter.embedding("image/png", "embedded0.png", "screenshot");
 formatter.after({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "verify both Students and librarians login",
+  "name": "Librarian should have access to 3 modules",
   "description": "",
-  "keyword": "Scenario Outline",
+  "keyword": "Scenario",
   "tags": [
     {
       "name": "@wip"
@@ -114,35 +61,27 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user login as a \"librarian13@library\" \"9rf6axdD\"",
+  "name": "the user login as a \"librarian\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.libraryCT.step_definitions.loginStepDefs.the_user_login_as_a(java.lang.String,java.lang.String)"
+  "location": "com.libraryCT.step_definitions.modulesStepDefs.the_user_login_as_a(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user on  \"Library\"",
+  "name": "the user should see modules",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.libraryCT.step_definitions.loginStepDefs.the_user_on(java.lang.String)"
+  "location": "com.libraryCT.step_definitions.modulesStepDefs.the_user_should_see_modules()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "java.lang.NullPointerException\n\tat com.libraryCT.step_definitions.modulesStepDefs.the_user_should_see_modules(modulesStepDefs.java:28)\n\tat ✽.the user should see modules(file:///Users/aliihsancelik/IdeaProjects/BigFuture/src/test/resources/features/Modules.feature:11)\n",
+  "status": "failed"
 });
-formatter.step({
-  "name": "the user should logout",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.libraryCT.step_definitions.loginStepDefs.the_user_should_logout()"
-});
-formatter.result({
-  "status": "passed"
-});
+formatter.embedding("image/png", "embedded1.png", "screenshot");
 formatter.after({
   "status": "passed"
 });

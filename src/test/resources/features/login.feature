@@ -1,7 +1,7 @@
 
 Feature:login and logout functionalities
 
-  @wip
+
   Scenario Outline: verify both Students and librarians login and logout
 
     When the user login as a "<username>" "<password>"
@@ -11,6 +11,7 @@ Feature:login and logout functionalities
       | username    | password | title   |
       | student11@library   | tScBPCUr | Library |
       | librarian13@library | 9rf6axdD | Library |
+
 
 
 
