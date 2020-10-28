@@ -16,6 +16,12 @@ public abstract class BasePage {
       PageFactory.initElements(Driver.get(),this);//this connects our driver with the elements in this class!
    }
 
+   @FindBy(css = "#book_categories")
+   public WebElement categoriesDropdown;
+
+   @FindBy(xpath = "//*[@type='search']")
+   public WebElement searchButton;
+
    @FindBy(xpath = "//thead//tr//th")
    public List<WebElement> tableColumns;
 
