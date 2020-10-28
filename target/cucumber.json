@@ -3,12 +3,12 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-10-28T00:27:50.263Z",
+        "start_timestamp": "2020-10-28T00:40:22.842Z",
         "before": [
           {
             "result": {
-              "duration": 1157000,
-              "status": "skipped"
+              "duration": 9009644000,
+              "status": "passed"
             },
             "match": {
               "location": "com.libraryCT.step_definitions.HOOKS.setUp()"
@@ -22,8 +22,8 @@
         "after": [
           {
             "result": {
-              "duration": 36000,
-              "status": "skipped"
+              "duration": 350054000,
+              "status": "passed"
             },
             "match": {
               "location": "com.libraryCT.step_definitions.HOOKS.tearDown(io.cucumber.java.Scenario)"
@@ -35,8 +35,8 @@
         "steps": [
           {
             "result": {
-              "duration": 1524000,
-              "status": "skipped"
+              "duration": 678898000,
+              "status": "passed"
             },
             "line": 5,
             "name": "the user login as a \"student\"",
@@ -53,11 +53,14 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 57982274000,
+              "status": "passed"
             },
             "line": 6,
             "name": "the user should see all options,choose any options and search a book",
-            "match": {},
+            "match": {
+              "location": "com.libraryCT.step_definitions.categoriesStepDefs.the_user_should_see_all_options_choose_any_options_and_search_a_book()"
+            },
             "keyword": "Then "
           }
         ],
