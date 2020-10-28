@@ -16,6 +16,9 @@ public abstract class BasePage {
       PageFactory.initElements(Driver.get(),this);//this connects our driver with the elements in this class!
    }
 
+   @FindBy(xpath = "//thead//tr//th")
+   public List<WebElement> tableColumns;
+
    @FindBy(css = "[id='navbarDropdown']")
    public WebElement profileName;
 

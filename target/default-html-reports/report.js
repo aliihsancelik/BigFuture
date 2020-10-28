@@ -1,11 +1,11 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/count.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/tableColumns.feature");
 formatter.feature({
-  "name": "count records",
+  "name": "table columns",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "default record should be 10",
+  "name": "verify table columns",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -15,42 +15,21 @@ formatter.scenario({
   ]
 });
 formatter.before({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "the user login as a \"librarian\"",
+  "name": "the user login as a \"student\"",
   "keyword": "Given "
 });
 formatter.match({
   "location": "com.libraryCT.step_definitions.modulesStepDefs.the_user_login_as_a(java.lang.String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "the user navigates \"Users\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.libraryCT.step_definitions.usersStepDefs.the_user_navigates(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the user should see \"10\" as default record",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.libraryCT.step_definitions.countsStepdefs.the_user_should_see_as_default_record(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the user should see the following options",
+  "name": "the user should see the following columns",
   "rows": [
-    {},
     {},
     {},
     {},
@@ -58,15 +37,13 @@ formatter.step({
     {},
     {}
   ],
-  "keyword": "And "
+  "keyword": "Then "
 });
-formatter.match({
-  "location": "com.libraryCT.step_definitions.countsStepdefs.the_user_should_see_the_following_options(java.util.List\u003cjava.lang.String\u003e)"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.after({
-  "status": "passed"
+  "status": "skipped"
 });
 });
