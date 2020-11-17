@@ -25,7 +25,7 @@ public class usersStepDefs {
     public void the_user_should_add_a_new_user_successfully() {
 
         BrowserUtils.waitFor(2);
-        new UsersPage().addUserWithValidInfo("ali","yb","ereseqwqwqrterer@gmail.com","virginia");
+        new UsersPage().addUserWithValidInfoAndVerifyUIandDATABASE("ali","yb","ereseqwqwqrterer@gmail.com","virginia");
                                                               //mail must change every time
 
     }

@@ -54,7 +54,7 @@ public class UsersPage extends BasePage{
     public List<WebElement> edits;
 
 
-    public void addUserWithValidInfo (String name , String passw, String mail, String adres){
+    public void addUserWithValidInfoAndVerifyUIandDATABASE (String name , String passw, String mail, String adres){
 
         addUser.click();
         BrowserUtils.waitFor(1);
