@@ -3,12 +3,12 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-10-28T00:40:22.842Z",
+        "start_timestamp": "2020-11-17T15:46:17.061Z",
         "before": [
           {
             "result": {
-              "duration": 9009644000,
-              "status": "passed"
+              "duration": 1642000,
+              "status": "skipped"
             },
             "match": {
               "location": "com.libraryCT.step_definitions.HOOKS.setUp()"
@@ -16,14 +16,14 @@
           }
         ],
         "line": 4,
-        "name": "students should choose any categories and search a book",
+        "name": "Librarian should add, edit users and close",
         "description": "",
-        "id": "categories-and-search;students-should-choose-any-categories-and-search-a-book",
+        "id": "add-user;librarian-should-add--edit-users-and-close",
         "after": [
           {
             "result": {
-              "duration": 350054000,
-              "status": "passed"
+              "duration": 47000,
+              "status": "skipped"
             },
             "match": {
               "location": "com.libraryCT.step_definitions.HOOKS.tearDown(io.cucumber.java.Scenario)"
@@ -35,15 +35,15 @@
         "steps": [
           {
             "result": {
-              "duration": 678898000,
-              "status": "passed"
+              "duration": 1885000,
+              "status": "skipped"
             },
             "line": 5,
-            "name": "the user login as a \"student\"",
+            "name": "the user login as a \"librarian\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"student\"",
+                  "val": "\"librarian\"",
                   "offset": 20
                 }
               ],
@@ -53,15 +53,54 @@
           },
           {
             "result": {
-              "duration": 57982274000,
-              "status": "passed"
+              "duration": 1416000,
+              "status": "skipped"
             },
             "line": 6,
-            "name": "the user should see all options,choose any options and search a book",
+            "name": "the user navigates \"Users\"",
             "match": {
-              "location": "com.libraryCT.step_definitions.categoriesStepDefs.the_user_should_see_all_options_choose_any_options_and_search_a_book()"
+              "arguments": [
+                {
+                  "val": "\"Users\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.libraryCT.step_definitions.usersStepDefs.the_user_navigates(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1166000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "the user should add a new user successfully",
+            "match": {
+              "location": "com.libraryCT.step_definitions.usersStepDefs.the_user_should_add_a_new_user_successfully()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "the user should see the created user in database",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1624000,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "the user should be able to edit and close",
+            "match": {
+              "location": "com.libraryCT.step_definitions.usersStepDefs.the_user_should_be_able_to_edit_and_close()"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
@@ -71,11 +110,11 @@
         ]
       }
     ],
-    "name": "categories and search",
+    "name": "Add User",
     "description": "",
-    "id": "categories-and-search",
+    "id": "add-user",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/categories.feature",
+    "uri": "file:src/test/resources/features/users.feature",
     "tags": []
   }
 ]

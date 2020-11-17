@@ -21,9 +21,14 @@ public class usersStepDefs {
     public void the_user_should_add_a_new_user_successfully() {
 
         BrowserUtils.waitFor(2);
-        new UsersPage().addUserWithValidInfo("ali","yb","erese@gmail.com","virginia");
+        new UsersPage().addUserWithValidInfo("ali","yb","ereseqwqw@gmail.com","virginia");
                                                               //mail must change every time
+
+        BrowserUtils.waitFor(1);
+
     }
+
+
 
     @Then("the user should be able to edit and close")
     public void the_user_should_be_able_to_edit_and_close() {

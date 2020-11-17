@@ -1,4 +1,3 @@
-
 Feature:login and logout functionalities
 
 
@@ -8,7 +7,7 @@ Feature:login and logout functionalities
     Then the user on  "<title>"
     And the user should logout
     Examples:
-      | username    | password | title   |
+      | username            | password | title   |
       | student11@library   | tScBPCUr | Library |
       | librarian13@library | 9rf6axdD | Library |
 
