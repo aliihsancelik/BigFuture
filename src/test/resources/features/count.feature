@@ -1,6 +1,6 @@
 Feature: count records
 
-
+  @wip
   Scenario: default record should be 10
     Given the user login as a "librarian"
     And the user navigates "Users"
