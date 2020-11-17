@@ -1,6 +1,7 @@
 package com.libraryCT.pages;
 
 import com.libraryCT.utilities.BrowserUtils;
+import com.libraryCT.utilities.DBUtils;
 import com.libraryCT.utilities.Driver;
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -9,6 +10,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
+import java.util.Map;
 
 public class UsersPage extends BasePage{
 
@@ -51,6 +53,7 @@ public class UsersPage extends BasePage{
     @FindBy(xpath = "//tbody//a[@role='button']")
     public List<WebElement> edits;
 
+
     public void addUserWithValidInfo (String name , String passw, String mail, String adres){
 
         addUser.click();
@@ -65,7 +68,15 @@ public class UsersPage extends BasePage{
         BrowserUtils.waitFor(1);
         Assert.assertEquals(mail, Driver.get().findElement(By.xpath("//td[contains(text(),'"+mail+"')]")).getText());
 
+        BrowserUtils.waitFor(3);
+        Map<String,Object> createdUserEmail = DBUtils.getRowMap("select email from users\n" +
+                "where email='"+mail+"'");
+        System.out.println(createdUserEmail.get("email"));
+        Assert.assertEquals(mail, createdUserEmail.get("email"));
+
+
     }
+
 
     public void editAndClose(){
         for (WebElement edit : edits) {

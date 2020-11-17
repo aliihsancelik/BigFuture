@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/libraryCT/step_definitions",
 
-        dryRun = true, //dryRun = true won't execute the code inside the definitions, just will check and find the undefined steps!
+        dryRun = false, //dryRun = true won't execute the code inside the definitions, just will check and find the undefined steps!
         // if we put dryRun = false it will be normal execution, so dryRun=true helps us to earn time for finding the undefined steps!
 
         tags = "@wip"

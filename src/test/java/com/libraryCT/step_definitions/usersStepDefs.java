@@ -2,10 +2,13 @@ package com.libraryCT.step_definitions;
 
 import com.libraryCT.pages.UsersPage;
 import com.libraryCT.utilities.BrowserUtils;
+import com.libraryCT.utilities.DBUtils;
 import com.libraryCT.utilities.Driver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
+
+import java.util.Map;
 
 public class usersStepDefs {
 
@@ -21,10 +24,9 @@ public class usersStepDefs {
     public void the_user_should_add_a_new_user_successfully() {
 
         BrowserUtils.waitFor(2);
-        new UsersPage().addUserWithValidInfo("ali","yb","ereseqwqw@gmail.com","virginia");
+        new UsersPage().addUserWithValidInfo("ali","yb","ereseqwqwqrte@gmail.com","virginia");
                                                               //mail must change every time
-
-        BrowserUtils.waitFor(1);
+        BrowserUtils.waitFor(3);
 
     }
 

@@ -1,6 +1,6 @@
 Feature: Add User
 
-@wip
+@wip @database
   Scenario: Librarian should add, edit users and close
     Given the user login as a "librarian"
     When the user navigates "Users"
