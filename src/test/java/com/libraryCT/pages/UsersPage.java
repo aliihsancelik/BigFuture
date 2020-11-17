@@ -68,7 +68,6 @@ public class UsersPage extends BasePage{
         BrowserUtils.waitFor(1);
         Assert.assertEquals(mail, Driver.get().findElement(By.xpath("//td[contains(text(),'"+mail+"')]")).getText());
 
-        BrowserUtils.waitFor(3);
         Map<String,Object> createdUserEmail = DBUtils.getRowMap("select email from users\n" +
                 "where email='"+mail+"'");
         System.out.println(createdUserEmail.get("email"));

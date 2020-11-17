@@ -1,6 +1,7 @@
 package com.libraryCT.step_definitions;
 
 import com.libraryCT.utilities.ConfigurationReader;
+import com.libraryCT.utilities.DBUtils;
 import com.libraryCT.utilities.Driver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -37,10 +38,12 @@ public class HOOKS {
     public void setUpDatabase(){
 
         System.out.println("\tconnecting to database");
+        DBUtils.createConnection();
     }
     @After(value = "@database", order = 1 ) //custom after: the scenario you put @database before, it runs after
     public void tearDownDatabase(){
 
         System.out.println("\tdisconnecting to database");
+        DBUtils.destroy();
     }
 }

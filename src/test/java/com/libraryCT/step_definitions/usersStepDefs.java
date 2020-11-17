@@ -6,6 +6,7 @@ import com.libraryCT.utilities.DBUtils;
 import com.libraryCT.utilities.Driver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 
 import java.util.Map;
@@ -24,9 +25,8 @@ public class usersStepDefs {
     public void the_user_should_add_a_new_user_successfully() {
 
         BrowserUtils.waitFor(2);
-        new UsersPage().addUserWithValidInfo("ali","yb","ereseqwqwqrte@gmail.com","virginia");
+        new UsersPage().addUserWithValidInfo("ali","yb","ereseqwqwqrterer@gmail.com","virginia");
                                                               //mail must change every time
-        BrowserUtils.waitFor(3);
 
     }
 
