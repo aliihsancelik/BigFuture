@@ -22,21 +22,22 @@ public class modulesStepDefs {
 
 
     @Then("the user should see {int} modules")
-    public void the_user_should_see_modules(int actualNumOfModules) {
+    public void the_user_should_see_modules(int expectedNumOfModules) {
         BrowserUtils.waitFor(2);
 
-        int expectedNumOfModules =0;
+        int actualNumOfModules =0;
 
         for (WebElement module : new BorrowingBooksPage().modules) {
 
-            expectedNumOfModules++;
+            actualNumOfModules++;
 
             System.out.println(module.getText());
             Assert.assertTrue(module.isDisplayed());
         }
 
-        System.out.println("Total= "+expectedNumOfModules+" modules");
-        Assert.assertEquals(actualNumOfModules,expectedNumOfModules);
+        System.out.println("Total= "+actualNumOfModules+" modules");
+
+        Assert.assertEquals(expectedNumOfModules,actualNumOfModules);
     }
 
 

@@ -1,5 +1,6 @@
 package com.libraryCT.step_definitions;
 
+import com.libraryCT.pages.BooksPage;
 import com.libraryCT.pages.UsersPage;
 import com.libraryCT.utilities.BrowserUtils;
 import com.libraryCT.utilities.DBUtils;
@@ -17,6 +18,8 @@ public class usersStepDefs {
     public void the_user_navigates(String moduleName) {
         if(moduleName.equals("Users")){
             new UsersPage().usersModule.click();
+        }else if(moduleName.equals("Books")){
+            new BooksPage().booksModule.click();
         }
 
     }
