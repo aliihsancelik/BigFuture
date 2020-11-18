@@ -1,72 +1,118 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/users.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/Modules.feature");
 formatter.feature({
-  "name": "Add User",
+  "name": "",
   "description": "",
   "keyword": "Feature"
 });
-formatter.scenario({
-  "name": "Librarian should add, edit users and close",
+formatter.scenarioOutline({
+  "name": "user should have accesses the \"\u003cn\u003e\" modules",
   "description": "",
-  "keyword": "Scenario",
+  "keyword": "Scenario Outline",
   "tags": [
     {
       "name": "@wip"
+    }
+  ]
+});
+formatter.step({
+  "name": "the user login as a \"\u003cuser\u003e\"",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "the user should see \"\u003cn\u003e\" modules",
+  "keyword": "Then "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "user",
+        "n"
+      ]
     },
     {
-      "name": "@database"
+      "cells": [
+        "librarian",
+        "2"
+      ]
+    },
+    {
+      "cells": [
+        "student",
+        "3"
+      ]
+    }
+  ]
+});
+formatter.scenario({
+  "name": "user should have accesses the \"2\" modules",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@wip"
     }
   ]
 });
 formatter.before({
-  "status": "passed"
-});
-formatter.before({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "the user login as a \"librarian\"",
-  "keyword": "Given "
+  "keyword": "When "
 });
 formatter.match({
   "location": "com.libraryCT.step_definitions.modulesStepDefs.the_user_login_as_a(java.lang.String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "the user navigates \"Users\"",
+  "name": "the user should see \"2\" modules",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.after({
+  "status": "skipped"
+});
+formatter.scenario({
+  "name": "user should have accesses the \"3\" modules",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@wip"
+    }
+  ]
+});
+formatter.before({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "the user login as a \"student\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.libraryCT.step_definitions.usersStepDefs.the_user_navigates(java.lang.String)"
+  "location": "com.libraryCT.step_definitions.modulesStepDefs.the_user_login_as_a(java.lang.String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "the user should add a new user successfully",
+  "name": "the user should see \"3\" modules",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "com.libraryCT.step_definitions.usersStepDefs.the_user_should_add_a_new_user_successfully()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the user should be able to edit and close",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.libraryCT.step_definitions.usersStepDefs.the_user_should_be_able_to_edit_and_close()"
-});
-formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.after({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
+  "status": "skipped"
 });
 });

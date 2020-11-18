@@ -3,45 +3,27 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-11-17T16:37:55.792Z",
+        "start_timestamp": "2020-11-18T15:18:34.368Z",
         "before": [
           {
             "result": {
-              "duration": 6719075000,
-              "status": "passed"
+              "duration": 3947000,
+              "status": "skipped"
             },
             "match": {
               "location": "com.libraryCT.step_definitions.HOOKS.setUp()"
             }
-          },
-          {
-            "result": {
-              "duration": 2073047000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.libraryCT.step_definitions.HOOKS.setUpDatabase()"
-            }
           }
         ],
-        "line": 4,
-        "name": "Librarian should add, edit users and close",
+        "line": 18,
+        "name": "user should have accesses the \"2\" modules",
         "description": "",
-        "id": "add-user;librarian-should-add--edit-users-and-close",
+        "id": ";user-should-have-accesses-the-\"\u003cn\u003e\"-modules;;2",
         "after": [
           {
             "result": {
-              "duration": 4057000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.libraryCT.step_definitions.HOOKS.tearDownDatabase()"
-            }
-          },
-          {
-            "result": {
-              "duration": 294545000,
-              "status": "passed"
+              "duration": 44000,
+              "status": "skipped"
             },
             "match": {
               "location": "com.libraryCT.step_definitions.HOOKS.tearDown(io.cucumber.java.Scenario)"
@@ -49,14 +31,14 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 467244000,
-              "status": "passed"
+              "duration": 3711000,
+              "status": "skipped"
             },
-            "line": 5,
+            "line": 14,
             "name": "the user login as a \"librarian\"",
             "match": {
               "arguments": [
@@ -67,66 +49,95 @@
               ],
               "location": "com.libraryCT.step_definitions.modulesStepDefs.the_user_login_as_a(java.lang.String)"
             },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3145389000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "the user navigates \"Users\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Users\"",
-                  "offset": 19
-                }
-              ],
-              "location": "com.libraryCT.step_definitions.usersStepDefs.the_user_navigates(java.lang.String)"
-            },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 5134338000,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 7,
-            "name": "the user should add a new user successfully",
-            "match": {
-              "location": "com.libraryCT.step_definitions.usersStepDefs.the_user_should_add_a_new_user_successfully()"
-            },
+            "line": 15,
+            "name": "the user should see \"2\" modules",
+            "match": {},
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 41542460000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "the user should be able to edit and close",
-            "match": {
-              "location": "com.libraryCT.step_definitions.usersStepDefs.the_user_should_be_able_to_edit_and_close()"
-            },
-            "keyword": "And "
           }
         ],
         "tags": [
           {
             "name": "@wip"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-18T15:18:35.006Z",
+        "before": [
+          {
+            "result": {
+              "duration": 346000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.libraryCT.step_definitions.HOOKS.setUp()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "user should have accesses the \"3\" modules",
+        "description": "",
+        "id": ";user-should-have-accesses-the-\"\u003cn\u003e\"-modules;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 35000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.libraryCT.step_definitions.HOOKS.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1275000,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "the user login as a \"student\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"student\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.libraryCT.step_definitions.modulesStepDefs.the_user_login_as_a(java.lang.String)"
+            },
+            "keyword": "When "
           },
           {
-            "name": "@database"
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "the user should see \"3\" modules",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
           }
         ]
       }
     ],
-    "name": "Add User",
+    "name": "",
     "description": "",
-    "id": "add-user",
+    "id": "",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/users.feature",
+    "uri": "file:src/test/resources/features/Modules.feature",
     "tags": []
   }
 ]

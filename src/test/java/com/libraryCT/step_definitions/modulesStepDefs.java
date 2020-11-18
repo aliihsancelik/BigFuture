@@ -20,17 +20,23 @@ public class modulesStepDefs {
         }
     }
 
-    @Then("the user should see modules")
-    public void the_user_should_see_modules() {
+
+    @Then("the user should see {int} modules")
+    public void the_user_should_see_modules(int actualNumOfModules) {
         BrowserUtils.waitFor(2);
 
-        int num =0;
+        int expectedNumOfModules =0;
+
         for (WebElement module : new BorrowingBooksPage().modules) {
-            num++;
+
+            expectedNumOfModules++;
             System.out.println(module.getText());
             Assert.assertTrue(module.isDisplayed());
         }
-        System.out.println("Total= "+num+" modules");
 
+        System.out.println("Total= "+expectedNumOfModules+" modules");
+        Assert.assertEquals(actualNumOfModules,expectedNumOfModules);
     }
+
+
 }

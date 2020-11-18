@@ -25,6 +25,7 @@ public class loginStepDefs {
     public void the_user_should_logout() {
         String currentTitle = Driver.get().getTitle();
         new BorrowingBooksPage().logOut();
+        BrowserUtils.waitFor(1);
         String newTitle = Driver.get().getTitle();
         Assert.assertTrue(!currentTitle.equals(newTitle));
     }

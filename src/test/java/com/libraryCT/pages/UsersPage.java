@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
 import java.util.Map;
-//updated
+
 public class UsersPage extends BasePage{
 
     @FindBy(css = ".form-control.input-sm.input-xsmall.input-inline")
