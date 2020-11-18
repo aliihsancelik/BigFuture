@@ -30,6 +30,7 @@ public class modulesStepDefs {
         for (WebElement module : new BorrowingBooksPage().modules) {
 
             expectedNumOfModules++;
+
             System.out.println(module.getText());
             Assert.assertTrue(module.isDisplayed());
         }
