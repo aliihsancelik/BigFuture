@@ -18,6 +18,7 @@ public class HOOKS {
     public void setUp(){
 
         Driver.get().get(ConfigurationReader.get("url"));
+        //Driver.get().manage().window().maximize();
         Driver.get().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
 

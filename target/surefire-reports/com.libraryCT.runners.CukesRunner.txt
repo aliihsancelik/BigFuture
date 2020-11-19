@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.libraryCT.runners.CukesRunner
+-------------------------------------------------------------------------------
+Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 272.724 s - in com.libraryCT.runners.CukesRunner

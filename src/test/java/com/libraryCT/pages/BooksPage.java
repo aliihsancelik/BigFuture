@@ -2,6 +2,7 @@ package com.libraryCT.pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
 
@@ -33,6 +34,12 @@ public class BooksPage extends BasePage{
 
     @FindBy(xpath = "//button[contains(text(),'Close')]")
     public WebElement cancelButton;
+
+
+   public void selectCategory(String category){
+
+       new Select(categoriesDropdown).selectByVisibleText(category);
+   }
 
 
 

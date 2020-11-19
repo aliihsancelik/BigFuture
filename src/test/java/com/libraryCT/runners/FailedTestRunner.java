@@ -14,6 +14,10 @@ import org.junit.runner.RunWith;
         //There are plugins in pom that provides to get failed ones and run again but be careful about the runner file names,
         //-because the plugin in pom is in Alphabetical order for the runners, check your pom and see!!
 
+        // To rerun failed tests only, we created FailedTestRunner under runner package.
+        // Then we use 'maven verify' phase to execute both CukesRunner and FailedTestRunner
+
+
 )
 
 public class FailedTestRunner {
