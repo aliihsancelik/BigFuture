@@ -1,0 +1,117 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-20T18:28:41.972Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1284000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.libraryCT.step_definitions.HOOKS.setUp()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1285000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.libraryCT.step_definitions.HOOKS.setUpDatabase()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "the first book existed in database or not",
+        "description": "",
+        "id": "books-database-testing;the-first-book-existed-in-database-or-not",
+        "after": [
+          {
+            "result": {
+              "duration": 47000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.libraryCT.step_definitions.HOOKS.tearDownDatabase()"
+            }
+          },
+          {
+            "result": {
+              "duration": 35000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.libraryCT.step_definitions.HOOKS.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2339000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "the user login as a \"librarian\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"librarian\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.libraryCT.step_definitions.modulesStepDefs.the_user_login_as_a(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 27107000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "the user navigates \"Books\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Books\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.libraryCT.step_definitions.usersStepDefs.the_user_navigates(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "in first category the info of \"a\" book should be in database",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          },
+          {
+            "name": "@database"
+          }
+        ]
+      }
+    ],
+    "name": "books database testing",
+    "description": "",
+    "id": "books-database-testing",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/booksDatabase.feature",
+    "tags": []
+  }
+]

@@ -32,7 +32,6 @@ public class booksStepDefs {
             booksPage.authorInput.sendKeys("Cybertek");
             booksPage.description.sendKeys("awesome");
             booksPage.saveBookButton.click();
-            //BrowserUtils.waitFor(1);
 
             BrowserUtils.waitForVisibility(Driver.get().findElement(By.xpath("//div[contains(text(),'The book has been created')]")),2);
             Assert.assertTrue(Driver.get().findElement(By.xpath("//div[contains(text(),'The book has been created')]")).isDisplayed());

@@ -1,6 +1,6 @@
 Feature: adding a book for each category
 
-  @wip
+
   Scenario Outline: librarian should add a book for "<categories>" category
     When the user login as a "librarian"
     And the user navigates "Books"
