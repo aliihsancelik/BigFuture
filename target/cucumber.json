@@ -3,12 +3,12 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-11-20T18:28:41.972Z",
+        "start_timestamp": "2020-11-20T20:02:50.650Z",
         "before": [
           {
             "result": {
-              "duration": 1284000,
-              "status": "skipped"
+              "duration": 12655081000,
+              "status": "passed"
             },
             "match": {
               "location": "com.libraryCT.step_definitions.HOOKS.setUp()"
@@ -16,8 +16,8 @@
           },
           {
             "result": {
-              "duration": 1285000,
-              "status": "skipped"
+              "duration": 2762734000,
+              "status": "passed"
             },
             "match": {
               "location": "com.libraryCT.step_definitions.HOOKS.setUpDatabase()"
@@ -31,8 +31,8 @@
         "after": [
           {
             "result": {
-              "duration": 47000,
-              "status": "skipped"
+              "duration": 3029000,
+              "status": "passed"
             },
             "match": {
               "location": "com.libraryCT.step_definitions.HOOKS.tearDownDatabase()"
@@ -40,8 +40,8 @@
           },
           {
             "result": {
-              "duration": 35000,
-              "status": "skipped"
+              "duration": 356829000,
+              "status": "passed"
             },
             "match": {
               "location": "com.libraryCT.step_definitions.HOOKS.tearDown(io.cucumber.java.Scenario)"
@@ -53,8 +53,8 @@
         "steps": [
           {
             "result": {
-              "duration": 2339000,
-              "status": "skipped"
+              "duration": 1024104000,
+              "status": "passed"
             },
             "line": 6,
             "name": "the user login as a \"librarian\"",
@@ -71,8 +71,8 @@
           },
           {
             "result": {
-              "duration": 27107000,
-              "status": "skipped"
+              "duration": 2878987000,
+              "status": "passed"
             },
             "line": 7,
             "name": "the user navigates \"Books\"",
@@ -89,11 +89,20 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 2469071000,
+              "status": "passed"
             },
             "line": 8,
             "name": "in first category the info of \"a\" book should be in database",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"a\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.libraryCT.step_definitions.booksDatabaseStepDef.in_first_category_the_info_of_book_should_be_in_database(java.lang.String)"
+            },
             "keyword": "Then "
           }
         ],

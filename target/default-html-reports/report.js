@@ -18,10 +18,10 @@ formatter.scenario({
   ]
 });
 formatter.before({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.before({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "the user login as a \"librarian\"",
@@ -31,7 +31,7 @@ formatter.match({
   "location": "com.libraryCT.step_definitions.modulesStepDefs.the_user_login_as_a(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "the user navigates \"Books\"",
@@ -41,20 +41,22 @@ formatter.match({
   "location": "com.libraryCT.step_definitions.usersStepDefs.the_user_navigates(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "in first category the info of \"a\" book should be in database",
   "keyword": "Then "
 });
-formatter.match({});
+formatter.match({
+  "location": "com.libraryCT.step_definitions.booksDatabaseStepDef.in_first_category_the_info_of_book_should_be_in_database(java.lang.String)"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.after({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.after({
-  "status": "skipped"
+  "status": "passed"
 });
 });

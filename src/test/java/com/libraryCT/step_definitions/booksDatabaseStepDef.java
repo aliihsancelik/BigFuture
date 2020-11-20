@@ -26,13 +26,7 @@ public class booksDatabaseStepDef {
         BrowserUtils.waitFor(1);
 
         List<WebElement> firstRowValues = Driver.get().findElements(By.xpath("//tr//td[text()='"+bookName+"']"));
-        List<String> firstRowValuesString = new ArrayList<>();
-
-        for (int i = 1; i < firstRowValues.size()-3; i++) {
-            firstRowValuesString.add(firstRowValues.get(i).getText());
-        }
-        System.out.println(firstRowValuesString);
-
+        List<String> firstRowValuesString = BrowserUtils.getElementsText(firstRowValues);
 
         //from database(as an expected)
         Map<String,Object> getRow =  DBUtils.getRowMap("select isbn,name,author from books\n" +
