@@ -1,13 +1,58 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-11-25T19:47:15.401Z",
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3045468000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user login as a \"librarian\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"librarian\"",
+                  "offset": 20
+                }
+              ],
+              "location": "com.libraryCT.step_definitions.modulesStepDefs.the_user_login_as_a(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 989720000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user navigates \"Users\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Users\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.libraryCT.step_definitions.usersStepDefs.the_user_navigates(java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-25T21:19:16.565Z",
         "before": [
           {
             "result": {
-              "duration": 14433272000,
+              "duration": 15022002000,
               "status": "passed"
             },
             "match": {
@@ -16,7 +61,7 @@
           },
           {
             "result": {
-              "duration": 2477742000,
+              "duration": 2688690000,
               "status": "passed"
             },
             "match": {
@@ -24,14 +69,14 @@
             }
           }
         ],
-        "line": 5,
-        "name": "Verify borrowing books from database for student user",
+        "line": 13,
+        "name": "verify if the given user exists in ui and database",
         "description": "",
-        "id": "borrowing-books-for-student;verify-borrowing-books-from-database-for-student-user",
+        "id": "user-verification;verify-if-the-given-user-exists-in-ui-and-database",
         "after": [
           {
             "result": {
-              "duration": 3639000,
+              "duration": 2537000,
               "status": "passed"
             },
             "match": {
@@ -40,7 +85,7 @@
           },
           {
             "result": {
-              "duration": 314420000,
+              "duration": 437765000,
               "status": "passed"
             },
             "match": {
@@ -53,49 +98,19 @@
         "steps": [
           {
             "result": {
-              "duration": 783082000,
+              "duration": 1314983000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "the user login as a \"student\"",
+            "line": 14,
+            "name": "the user with this email \"manie.mante@hayesandsons.net\" existed in ui and database or not",
             "match": {
               "arguments": [
                 {
-                  "val": "\"student\"",
-                  "offset": 20
+                  "val": "\"manie.mante@hayesandsons.net\"",
+                  "offset": 25
                 }
               ],
-              "location": "com.libraryCT.step_definitions.modulesStepDefs.the_user_login_as_a(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 3420000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "the user navigates \"Borrowing Books\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Borrowing Books\"",
-                  "offset": 19
-                }
-              ],
-              "location": "com.libraryCT.step_definitions.usersStepDefs.the_user_navigates(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5611015000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "verify the borrowing books if they exist in database or not",
-            "match": {
-              "location": "com.libraryCT.step_definitions.borrowingBooksStudentStepDefs.verify_the_borrowing_books_if_they_exist_in_database_or_not()"
+              "location": "com.libraryCT.step_definitions.usersStepDefs.the_user_with_this_email_existed_in_ui_and_database_or_not(java.lang.String)"
             },
             "keyword": "Then "
           }
@@ -110,11 +125,11 @@
         ]
       }
     ],
-    "name": "Borrowing Books for Student",
+    "name": "User verification",
     "description": "",
-    "id": "borrowing-books-for-student",
+    "id": "user-verification",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/borrowingBooksStudent.feature",
+    "uri": "file:src/test/resources/features/users.feature",
     "tags": []
   }
 ]

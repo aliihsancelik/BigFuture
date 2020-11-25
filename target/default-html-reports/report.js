@@ -1,11 +1,42 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/borrowingBooksStudent.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/users.feature");
 formatter.feature({
-  "name": "Borrowing Books for Student",
+  "name": "User verification",
   "description": "",
   "keyword": "Feature"
 });
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user login as a \"librarian\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.libraryCT.step_definitions.modulesStepDefs.the_user_login_as_a(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user navigates \"Users\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.libraryCT.step_definitions.usersStepDefs.the_user_navigates(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.scenario({
-  "name": "Verify borrowing books from database for student user",
+  "name": "verify if the given user exists in ui and database",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -17,38 +48,12 @@ formatter.scenario({
     }
   ]
 });
-formatter.before({
-  "status": "passed"
-});
-formatter.before({
-  "status": "passed"
-});
 formatter.step({
-  "name": "the user login as a \"student\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.libraryCT.step_definitions.modulesStepDefs.the_user_login_as_a(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the user navigates \"Borrowing Books\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.libraryCT.step_definitions.usersStepDefs.the_user_navigates(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "verify the borrowing books if they exist in database or not",
+  "name": "the user with this email \"manie.mante@hayesandsons.net\" existed in ui and database or not",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.libraryCT.step_definitions.borrowingBooksStudentStepDefs.verify_the_borrowing_books_if_they_exist_in_database_or_not()"
+  "location": "com.libraryCT.step_definitions.usersStepDefs.the_user_with_this_email_existed_in_ui_and_database_or_not(java.lang.String)"
 });
 formatter.result({
   "status": "passed"

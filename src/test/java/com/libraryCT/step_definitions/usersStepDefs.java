@@ -43,4 +43,24 @@ public class usersStepDefs {
         new UsersPage().editAndClose();
 
     }
+
+
+    @Then("the user with this email {string} existed in ui and database or not")
+    public void the_user_with_this_email_existed_in_ui_and_database_or_not(String email) {
+
+        //ui
+        String emailUI = Driver.get().findElement(By.xpath("//td[contains(text(),'"+email+"')]")).getText();
+
+        //database
+        Map<String, Object> rowMap = DBUtils.getRowMap("select email from users\n" +
+                "where email = '"+email+"'");
+
+        System.out.println("emailFromUI = " + emailUI);
+        System.out.println("emailFromDATABASE = " + (String)rowMap.get("email"));
+
+        //assertion
+        Assert.assertEquals((String)rowMap.get("email") , emailUI);
+
+
+    }
 }
