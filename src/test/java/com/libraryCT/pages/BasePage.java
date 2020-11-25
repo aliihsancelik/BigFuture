@@ -39,6 +39,9 @@ public abstract class BasePage {
    @FindBy(xpath = "//span[contains(text(),'Books')]")
    public WebElement booksModule;
 
+   @FindBy(xpath = "//span[contains(text(),'Borrowing Books')]")
+   public WebElement borrowingBooksModule;
+
 
    public void logOut(){
        Driver.get().findElement(By.cssSelector("[id='navbarDropdown']")).click();

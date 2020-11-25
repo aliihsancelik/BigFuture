@@ -20,6 +20,8 @@ public class usersStepDefs {
             new UsersPage().usersModule.click();
         }else if(moduleName.equals("Books")){
             new BooksPage().booksModule.click();
+        }else if(moduleName.equals("Borrowing Books")) {
+            new BooksPage().borrowingBooksModule.click();
         }
 
     }
@@ -28,7 +30,7 @@ public class usersStepDefs {
     public void the_user_should_add_a_new_user_successfully() {
 
         BrowserUtils.waitFor(2);
-        new UsersPage().addUserWithValidInfoAndVerifyUIandDATABASE("ali","yb","rtererqa@gmail.com","virginia");
+        new UsersPage().addUserWithValidInfoAndVerifyUIandDATABASE("ali","yb","rteresdsrqa@gmail.com","virginia");
                                                               //mail must change every time
 
     }

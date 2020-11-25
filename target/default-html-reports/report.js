@@ -1,11 +1,11 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/booksDatabase.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/borrowingBooksStudent.feature");
 formatter.feature({
-  "name": "books database testing",
+  "name": "Borrowing Books for Student",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "the first book existed in database or not",
+  "name": "Verify borrowing books from database for student user",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -24,8 +24,8 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user login as a \"librarian\"",
-  "keyword": "When "
+  "name": "the user login as a \"student\"",
+  "keyword": "Given "
 });
 formatter.match({
   "location": "com.libraryCT.step_definitions.modulesStepDefs.the_user_login_as_a(java.lang.String)"
@@ -34,7 +34,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user navigates \"Books\"",
+  "name": "the user navigates \"Borrowing Books\"",
   "keyword": "And "
 });
 formatter.match({
@@ -44,11 +44,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "in first category the info of \"a\" book should be in database",
+  "name": "verify the borrowing books if they exist in database or not",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.libraryCT.step_definitions.booksDatabaseStepDef.in_first_category_the_info_of_book_should_be_in_database(java.lang.String)"
+  "location": "com.libraryCT.step_definitions.borrowingBooksStudentStepDefs.verify_the_borrowing_books_if_they_exist_in_database_or_not()"
 });
 formatter.result({
   "status": "passed"

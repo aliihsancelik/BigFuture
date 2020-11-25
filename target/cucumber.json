@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-11-20T20:02:50.650Z",
+        "start_timestamp": "2020-11-25T19:47:15.401Z",
         "before": [
           {
             "result": {
-              "duration": 12655081000,
+              "duration": 14433272000,
               "status": "passed"
             },
             "match": {
@@ -16,7 +16,7 @@
           },
           {
             "result": {
-              "duration": 2762734000,
+              "duration": 2477742000,
               "status": "passed"
             },
             "match": {
@@ -25,13 +25,13 @@
           }
         ],
         "line": 5,
-        "name": "the first book existed in database or not",
+        "name": "Verify borrowing books from database for student user",
         "description": "",
-        "id": "books-database-testing;the-first-book-existed-in-database-or-not",
+        "id": "borrowing-books-for-student;verify-borrowing-books-from-database-for-student-user",
         "after": [
           {
             "result": {
-              "duration": 3029000,
+              "duration": 3639000,
               "status": "passed"
             },
             "match": {
@@ -40,7 +40,7 @@
           },
           {
             "result": {
-              "duration": 356829000,
+              "duration": 314420000,
               "status": "passed"
             },
             "match": {
@@ -53,33 +53,33 @@
         "steps": [
           {
             "result": {
-              "duration": 1024104000,
+              "duration": 783082000,
               "status": "passed"
             },
             "line": 6,
-            "name": "the user login as a \"librarian\"",
+            "name": "the user login as a \"student\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"librarian\"",
+                  "val": "\"student\"",
                   "offset": 20
                 }
               ],
               "location": "com.libraryCT.step_definitions.modulesStepDefs.the_user_login_as_a(java.lang.String)"
             },
-            "keyword": "When "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 2878987000,
+              "duration": 3420000,
               "status": "passed"
             },
             "line": 7,
-            "name": "the user navigates \"Books\"",
+            "name": "the user navigates \"Borrowing Books\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Books\"",
+                  "val": "\"Borrowing Books\"",
                   "offset": 19
                 }
               ],
@@ -89,19 +89,13 @@
           },
           {
             "result": {
-              "duration": 2469071000,
+              "duration": 5611015000,
               "status": "passed"
             },
             "line": 8,
-            "name": "in first category the info of \"a\" book should be in database",
+            "name": "verify the borrowing books if they exist in database or not",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"a\"",
-                  "offset": 30
-                }
-              ],
-              "location": "com.libraryCT.step_definitions.booksDatabaseStepDef.in_first_category_the_info_of_book_should_be_in_database(java.lang.String)"
+              "location": "com.libraryCT.step_definitions.borrowingBooksStudentStepDefs.verify_the_borrowing_books_if_they_exist_in_database_or_not()"
             },
             "keyword": "Then "
           }
@@ -116,11 +110,11 @@
         ]
       }
     ],
-    "name": "books database testing",
+    "name": "Borrowing Books for Student",
     "description": "",
-    "id": "books-database-testing",
+    "id": "borrowing-books-for-student",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/booksDatabase.feature",
+    "uri": "file:src/test/resources/features/borrowingBooksStudent.feature",
     "tags": []
   }
 ]

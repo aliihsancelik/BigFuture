@@ -18,6 +18,8 @@ public class modulesStepDefs {
         }else if (user.equals("librarian")){
             new LoginPage().login(ConfigurationReader.get("librarianUsername"),ConfigurationReader.get("librarianPassword"));
         }
+
+        BrowserUtils.waitFor(2);
     }
 
 
